@@ -25,10 +25,18 @@ const Messages = () => {
   
 
   return (
-    <div className="px-4 flex-1 overflow-auto">
     
+    <div className="px-4 flex-1 overflow-auto">
 {
-        !loading &&  messages.length>0 && (
+  
+  loading ? (
+    <div>
+            <h1>...Loading</h1>
+          </div>
+  ):  messages.length===0 ? (
+    <h1>No messages.Start by sending messages</h1>
+          
+        ):(
 
           messages.map((messageObject)=>{
            
@@ -41,15 +49,15 @@ const Messages = () => {
           
   )
         
-      
+
       }
       
     
         
-          
+      </div>
         
       
-    </div>
+    
   );
 };
 
