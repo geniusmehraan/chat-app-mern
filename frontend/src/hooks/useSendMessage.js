@@ -18,7 +18,7 @@ const useSendMessage = () => {
     try {
 
 
-      const res = await fetch(`https://chat-app-mehraan.onrender.com/api/messages/send/${selectedConversation._id}`, {
+      const res = await fetch(`https://chat-app-ayaan.onrender.com/api/messages/send/${selectedConversation._id}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message }),

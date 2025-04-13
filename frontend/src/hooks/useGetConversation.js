@@ -9,7 +9,7 @@ useEffect(()=>{
     const getConversation = async ()=>{
         setLoading(true)
    try {
-    const res = await fetch("https://chat-app-mehraan.onrender.com/api/users")
+    const res = await fetch("https://chat-app-ayaan.onrender.com/api/users")
     const data = await res.json()
     if(data.message){
         throw new Error(data.message)

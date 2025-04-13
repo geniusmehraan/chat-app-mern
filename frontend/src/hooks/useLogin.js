@@ -10,7 +10,7 @@ const useLogin = ()=>{
         setloading(true)
         try {
             
-            const res = await fetch("https://chat-app-mehraan.onrender.com/api/auth/login",{
+            const res = await fetch("https://chat-app-ayaan.onrender.com/api/auth/login",{
                 method:"POST",
                 headers:{"Content-type":"application/json"},
                 body:JSON.stringify({username,password})

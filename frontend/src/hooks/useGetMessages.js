@@ -10,7 +10,7 @@ const useGetMessages = () => {
     const getMessages = async ()=>{
         setloading(true)
         try {
-            const res = await fetch(`https://chat-app-mehraan.onrender.com/api/messages/${selectedConversation._id}`)
+            const res = await fetch(`https://chat-app-ayaan.onrender.com/api/messages/${selectedConversation._id}`)
             
             const data = await res.json()
             

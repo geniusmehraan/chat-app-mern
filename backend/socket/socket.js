@@ -10,7 +10,7 @@ const server = http.createServer(app)
 const SocketServer = new Server(server,
     {
         cors:{
-            origin:["https://chat-app-mehraan.onrender.com"],
+            origin:["https://chat-app-ayaan.onrender.com"],
             methods:["GET","POST"]
         }
     }
